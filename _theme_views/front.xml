@@ -79,10 +79,10 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
       <image name="pie-barra" extra="static" ifHelpPrompts="true">
          <path>${themePath}/_theme_inc/images/pixel-blanco.png</path>
-         <pos>0.19 0.72</pos>
-         <size>0.62 0.08</size>
-         <color>1f1f1fcc</color>
-         <roundCorners>0.04</roundCorners>
+         <pos>0.205 0.71</pos>
+         <size>0.59 0.085</size>
+         <color>1c1c1ce8</color>
+         <roundCorners>0.045</roundCorners>
          <verticalAlignment>top</verticalAlignment>
          <alignment>left</alignment>
          <linearSmooth>true</linearSmooth>
@@ -90,10 +90,60 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
          <opacity>1</opacity>
       </image>
 
+
+
+      <!-- QUICK ACTIONS (Switch-like dock) -->
+      <image name="dock-btn-1, dock-btn-2, dock-btn-3, dock-btn-4" extra="static">
+         <path>${themePath}/_theme_inc/images/pixel-blanco.png</path>
+         <size>0.04 0.04</size>
+         <color>f7f7f7ff</color>
+         <roundCorners>1</roundCorners>
+         <zIndex>97</zIndex>
+      </image>
+
+      <image name="dock-btn-1" extra="static">
+         <pos>0.34 0.732</pos>
+      </image>
+      <image name="dock-btn-2" extra="static">
+         <pos>0.41 0.732</pos>
+      </image>
+      <image name="dock-btn-3" extra="static">
+         <pos>0.48 0.732</pos>
+      </image>
+      <image name="dock-btn-4" extra="static">
+         <pos>0.55 0.732</pos>
+      </image>
+
+      <image name="dock-icon-1, dock-icon-2, dock-icon-3, dock-icon-4" extra="static">
+         <maxSize>0.022 0.022</maxSize>
+         <color>2e2e2eff</color>
+         <zIndex>98</zIndex>
+      </image>
+
+      <image name="dock-icon-1" extra="static" onclick="gamelist">
+         <path>${themePath}/_theme_inc/images/gamefolder.png</path>
+         <pos>0.349 0.741</pos>
+      </image>
+
+      <image name="dock-icon-2" extra="static" onclick="netplay">
+         <path>${themePath}/_theme_inc/images/users-picto.svg</path>
+         <pos>0.419 0.741</pos>
+      </image>
+
+      <image name="dock-icon-3" extra="static" onclick="cheevos">
+         <path>${themePath}/_theme_inc/images/trophy-picto.svg</path>
+         <pos>0.489 0.741</pos>
+      </image>
+
+      <image name="dock-icon-4" extra="static">
+         <path>${themePath}/_theme_inc/images/controller.svg</path>
+         <pos>0.559 0.741</pos>
+      </image>
+
       <image name="logo2" extra="true" ifSubset="system-logo:YES">
-         <pos>0.825 0.77</pos>
+         <pos>0.83 0.84</pos>
          <alignment>center</alignment>
-         <maxSize>0.16 0.12</maxSize>
+         <maxSize>0.12 0.08</maxSize>
          <origin>0 0</origin>
          <path>{random:marquee}</path>
          <!--  png -->
@@ -126,11 +176,11 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
       <image name="system-console" extra="true" ifSubset="system-console:YES">
          <tile>false</tile>
-         <pos>0.825 0.48</pos>
+         <pos>0.83 0.86</pos>
          <origin>0 0</origin>
          <verticalAlignment>bottom</verticalAlignment>
          <alignment>center</alignment>
-         <maxSize >0.16 0.25</maxSize>
+         <maxSize >0.1 0.1</maxSize>
          <path>${themePath}/_theme_inc/images/consoles/${system.theme}.png</path>
          <zIndex>99</zIndex>
          <linearSmooth>true</linearSmooth>

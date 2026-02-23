@@ -105,17 +105,38 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       <text name="systemInfoEx" extra="static">
          <text>''+ {system:total}  + ' ' +'${GamesNumber}' + '  •  '  +  {system:favorites}.tointeger() + ' ' + '${GamesFavs}' + '  •  '  +  {system:gamesPlayed} + ' ' +  '${NumberPlayed}' + ''</text>
          <text tinyScreen="true">'' + {system:total}  + ' ' + '${GamesNumber}' + '  •  '  +  {system:favorites}.tointeger() + ' ' +  '${GamesFavs}' + ''</text>
+         <pos>0.215 0.098</pos>
+         <size>0.56 0.028</size>
+         <fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
+         <fontSize>0.022</fontSize>
+         <alignment>left</alignment>
+         <color>57dfffff</color>
+         <backgroundColor>00000000</backgroundColor>
          <visible>{system:total} &gt; 0 ? 1 : 0</visible>
       </text>
 
       <text name="systemInfoEx2" extra="static">
          <text>''+ '${theme.mostplayed}' + ' ' + {system:mostPlayed} ''+</text>
+         <pos>0.215 0.098</pos>
+         <size>0.56 0.028</size>
+         <fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
+         <fontSize>0.022</fontSize>
+         <alignment>left</alignment>
+         <color>57dfffff</color>
+         <backgroundColor>00000000</backgroundColor>
          <opacity>0</opacity>
          <visible>{system:total} &gt; 0 ? 1 : 0</visible>
       </text>
 
       <text name="systemInfoExNull" extra="static">
          <text>0 ${GamesNumber}</text>
+         <pos>0.215 0.098</pos>
+         <size>0.56 0.028</size>
+         <fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
+         <fontSize>0.022</fontSize>
+         <alignment>left</alignment>
+         <color>57dfffff</color>
+         <backgroundColor>00000000</backgroundColor>
          <visible>{system:total} == 0 ? 1 : 0</visible>
       </text>
 
@@ -139,9 +160,9 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
       <image name="users-picto" extra="static" onclick="netplay">
          <path>${themePath}/_theme_inc/images/users-picto.svg</path>
-         <pos>0.554 0.047</pos>
-         <pos ifSubset="aspect-ratio:4-3|5-4">0.534 0.047</pos>
-         <maxSize>0.05</maxSize>
+         <pos>0.86 0.045</pos>
+         <pos ifSubset="aspect-ratio:4-3|5-4">0.84 0.045</pos>
+         <maxSize>0.03</maxSize>
          <color if="{system.netplay} == true">e8c820cc</color>
          <color if="{system.netplay} == false">ffffff</color>
          <verticalAlignment>top</verticalAlignment>
@@ -153,10 +174,10 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       
       <image name="trophy-picto" extra="static" onclick="cheevos">
          <path>${themePath}/_theme_inc/images/trophy-picto.svg</path>
-         <pos>0.827 0.045</pos>
-         <pos ifSubset="aspect-ratio:4-3">0.885 0.05</pos>
-         <pos ifSubset="aspect-ratio:5-4">0.875 0.045</pos>
-         <pos ifSubset="aspect-ratio:3-2">0.895 0.055</pos>
+         <pos>0.895 0.045</pos>
+         <pos ifSubset="aspect-ratio:4-3">0.875 0.045</pos>
+         <pos ifSubset="aspect-ratio:5-4">0.86 0.045</pos>
+         <pos ifSubset="aspect-ratio:3-2">0.88 0.045</pos>
          <maxSize>0.044</maxSize>
          <maxSize ifSubset="aspect-ratio:4-3|3-2">0.034</maxSize>
          <color>ffffff</color>
