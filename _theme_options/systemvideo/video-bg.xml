@@ -11,6 +11,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
       <view name="system" ifSubset="video-system:background-option">
             <video name="system_video_bg" extra="true" >
+                  <visible>false</visible>
                   <pos>0 0</pos>
                   <effect>none</effect>
                   <size>1 1</size>

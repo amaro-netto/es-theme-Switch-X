@@ -274,9 +274,6 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 	<!--OPCIONES DE VIDEO SISTEMAS-->
 	<subset name="video-system" displayName="${theme.videoBackground}">
 		<include name="NO" displayName="${VideoOff}" tinyScreen="true">./_theme_options/systemvideo/video-bg.xml</include>
-		<include name="NO" ifNotArch="bcm2711, bcm2712,rpi5,rpi4,windows,x86,x86_64,odroidc4,odroidxu4" displayName="${VideoOff}">./_theme_options/systemvideo/video-bg.xml</include>
-		<include  name="small-screen" ifArch="bcm2711, bcm2712, rpi5,rpi4,windows,x86,x86_64,odroidc4,odroidxu4" displayName="${theme.smallScreenOption}">./_theme_options/systemvideo/enable-video-small.xml</include>
-		<include name="background-option" displayName="${theme.backgroundVideoOption}">./_theme_options/systemvideo/video-bg.xml</include>
 		<include name="NO" displayName="${VideoOff}" tinyScreen="false">./_theme_options/systemvideo/video-bg.xml</include>
 	</subset>
 
