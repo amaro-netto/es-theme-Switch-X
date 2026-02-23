@@ -19,7 +19,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
          <x ifSubset="aspect-ratio:3-2|16-10|5-3|16-9">0.918 </x>
          <x ifSubset="aspect-ratio:4-3|5-4">0.912</x>
          <y>0.047</y>
-         <color>ffffff</color>
+         <color>d7f8ff</color>
          <glowColor>00000035</glowColor>
          <glowSize>1</glowSize>
          <glowOffset>3 2</glowOffset>
@@ -52,6 +52,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
    <view name="system">
       <image name="frontend-logo" extra="true">
+         <visible>false</visible>
          <path ifSubset="frontend:batocera">${themePath}/_theme_inc/images/frontends/logo-bato-front.svg</path>
          <path ifSubset="frontend:retrobat">${themePath}/_theme_inc/images/frontends/retrobat-logo.png</path>
          <path ifSubset="frontend:knulli">${themePath}/_theme_inc/images/frontends/knulli-logo-splash.png</path>
@@ -75,6 +76,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
 
       <image name="plus-picto" extra="static">
+         <visible>false</visible>
          <path>${themePath}/_theme_inc/images/plus-picto-bato.svg</path>
          <pos>0.086 0.045</pos>
          <pos ifSubset="frontend:none">0.02 0.045</pos>
@@ -418,6 +420,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       </image>
 
       <text name="version" extra="static" ifSubset="top-info:default">
+         <visible>false</visible>
          <text>v.42</text>
          <pos>0.563 0.012</pos>
          <pos ifSubset="aspect-ratio:4-3|5-4">0.547 0.012</pos>
@@ -451,31 +454,33 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       <image name="avatar" extra="static">
          <path>${themePath}/_theme_options/avatars/${image.avatar}</path>
          <path ifSubset="system-avatar:custom">${themePath}/custom-avatar.png</path>
-         <pos>0.618 0.039</pos>
-         <pos ifSubset="aspect-ratio:4-3|5-4|3-2">0.625 0.039</pos>
-         <maxSize>0.063 0.063</maxSize>
+         <pos>0.018 0.02</pos>
+         <pos ifSubset="aspect-ratio:4-3|5-4|3-2">0.018 0.02</pos>
+         <maxSize>0.05 0.05</maxSize>
          <zIndex>99</zIndex>
          <linearSmooth>true</linearSmooth>
+         <roundCorners>1</roundCorners>
       </image>
 
 
       <webimage name="avatar"  extra="static" if="{global.cheevos} == true" ifSubset="system-avatar:cheevos">
          <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
-         <pos>0.618 0.035</pos>
-         <pos ifSubset="aspect-ratio:4-3|5-4">0.625 0.035</pos>
-         <maxSize>0.063 0.063</maxSize>
+         <pos>0.018 0.02</pos>
+         <pos ifSubset="aspect-ratio:4-3|5-4">0.018 0.02</pos>
+         <maxSize>0.05 0.05</maxSize>
          <zIndex>99</zIndex>
          <linearSmooth>true</linearSmooth>
+         <roundCorners>1</roundCorners>
        </webimage>
 
        <text name="username" extra="static">
          <text>${theme.nick}</text>
          <text ifSubset="system-username:custom">${custom.nick}</text>
-         <pos>0.660 0.05</pos>
-         <pos ifSubset="aspect-ratio:16-10">0.662 0.05</pos>
-         <pos ifSubset="aspect-ratio:4-3|5-4|3-2">0.68 0.05</pos>
+         <pos>0.075 0.028</pos>
+         <pos ifSubset="aspect-ratio:16-10">0.075 0.028</pos>
+         <pos ifSubset="aspect-ratio:4-3|5-4|3-2">0.075 0.028</pos>
          <pos ifSubset="aspect-ratio:4-3" tinyScreen="true">0.685 0.045</pos>
-         <size>0.165 0.04</size>
+         <size>0.25 0.04</size>
          <size ifSubset="aspect-ratio:4-3|5-4">0.185 0.04</size>
          <size ifSubset="aspect-ratio:3-2">0.205 0.04</size>
          <color>ffffff</color>
@@ -498,6 +503,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       </image>
 
       <image name="star-picto" extra="static"  ifSubset="top-info:default">
+         <visible>false</visible>
          <path>${themePath}/_theme_inc/images/star-picto.png</path>
          <pos>0.856 0.054</pos>
          <pos ifSubset="aspect-ratio:16-10|5-3">0.86 0.054</pos>
@@ -511,6 +517,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       </image>
 
       <text name="theme-release-year" extra="static" ifSubset="top-info:default">
+         <visible>false</visible>
          <text>2025</text>
          <pos>0.875 0.052</pos>
          <pos ifSubset="aspect-ratio:16-10">0.88 0.052</pos>
