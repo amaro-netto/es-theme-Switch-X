@@ -122,41 +122,41 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
 
 
-               <pos>-0.685 0.13</pos>
-               <size >1.7 1</size>
-               <size ifSubset="aspect-ratio:4-3|5-4|3-2">1.73 1</size>
+               <pos>-0.62 0.165</pos>
+               <size >1.55 1</size>
+               <size ifSubset="aspect-ratio:4-3|5-4|3-2">1.62 1</size>
 
             </carousel>
 
             <image name="marco-activo" extra="static">
-               <pos >0.109 0.141</pos>
-               <pos ifSubset="aspect-ratio:16-10">0.103 0.141</pos>
-               <pos ifSubset="aspect-ratio:4-3|5-3">0.105 0.141</pos>
-               <pos ifSubset="aspect-ratio:5-4">0.1 0.141</pos>
-               <pos ifSubset="aspect-ratio:3-2">0.113 0.141</pos>
-               <pos ifSubset="aspect-ratio:21-9">0.123 0.141</pos>
+               <pos >0.187 0.177</pos>
+               <pos ifSubset="aspect-ratio:16-10">0.195 0.177</pos>
+               <pos ifSubset="aspect-ratio:4-3|5-3">0.175 0.177</pos>
+               <pos ifSubset="aspect-ratio:5-4">0.17 0.177</pos>
+               <pos ifSubset="aspect-ratio:3-2">0.185 0.177</pos>
+               <pos ifSubset="aspect-ratio:21-9">0.2 0.177</pos>
 
 
 
 
-               <maxSize>0.199</maxSize>
+               <maxSize>0.182</maxSize>
                
             </image>
       
       
             <text name="system_name" extra="true">
                <text>{system:fullName}.proper()</text>
-               <pos >0.228 0.3</pos>
-               <pos ifSubset="aspect-ratio:16-10|5-3">0.233 0.3</pos>
-               <pos ifSubset="aspect-ratio:4-3">0.262 0.3</pos>
-               <pos ifSubset="aspect-ratio:5-4">0.268 0.3</pos>
-               <pos ifSubset="aspect-ratio:3-2">0.25 0.3</pos>
-               <pos ifSubset="aspect-ratio:21-9">0.211 0.3</pos>
+               <pos >0.08 0.098</pos>
+               <pos ifSubset="aspect-ratio:16-10|5-3">0.09 0.098</pos>
+               <pos ifSubset="aspect-ratio:4-3">0.085 0.098</pos>
+               <pos ifSubset="aspect-ratio:5-4">0.08 0.098</pos>
+               <pos ifSubset="aspect-ratio:3-2">0.09 0.098</pos>
+               <pos ifSubset="aspect-ratio:21-9">0.08 0.098</pos>
 
 
 
 
-               <fontSize>0.042</fontSize>
+               <fontSize>0.036</fontSize>
             </text>
       
             <text name="fullName" extra="true">

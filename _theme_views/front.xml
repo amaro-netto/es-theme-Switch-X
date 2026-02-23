@@ -34,7 +34,8 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       </image>
 
       <image name="overlay" extra="static">
-         <path>${themePath}/_theme_inc/images/overlay-systemview.png</path>
+         <path>${themePath}/_theme_inc/images/pixel-blanco.png</path>
+         <color>00000099</color>
          <zIndex>48</zIndex>
       </image>
 
@@ -62,30 +63,31 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
 
       <image name="linea-inferior" extra="static">
          <path>${themePath}/_theme_inc/images/pixel-blanco.png</path>
-         <pos>0 0.934</pos>
-         <size>1 0.002</size>
+         <pos>0.03 0.848</pos>
+         <size>0.94 0.002</size>
          <size tinyScreen="true">1 0.005</size>
-         <color>${sistema.lineainferior}</color>
-         <colorEnd>${sistema.lineainferior}</colorEnd>
+         <color>ffffff66</color>
+         <colorEnd>ffffff66</colorEnd>
          <gradientType>horizontal</gradientType>
          <zIndex>97</zIndex>
          <autoFade>false</autoFade>
       </image>
 
       <image name="linea-inferior" extra="static" ifHelpPrompts="false">
-         <y>0.995</y>
+         <y>0.955</y>
       </image>
 
       <image name="pie-barra" extra="static" ifHelpPrompts="true">
          <path>${themePath}/_theme_inc/images/pixel-blanco.png</path>
-         <pos>0 0.934</pos>
-         <size>1 0.2</size>
-         <color>${sistema.pie}</color>
+         <pos>0.19 0.72</pos>
+         <size>0.62 0.08</size>
+         <color>1f1f1fcc</color>
+         <roundCorners>0.04</roundCorners>
          <verticalAlignment>top</verticalAlignment>
          <alignment>left</alignment>
          <linearSmooth>true</linearSmooth>
          <zIndex>96</zIndex>
-         <opacity>0.4</opacity>
+         <opacity>1</opacity>
       </image>
 
       <image name="logo2" extra="true" ifSubset="system-logo:YES">

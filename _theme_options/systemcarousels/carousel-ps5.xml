@@ -23,19 +23,19 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
       </image>
 
       <carousel name="systemcarousel">
-         <minLogoOpacity>0.7</minLogoOpacity>
+         <minLogoOpacity>0.35</minLogoOpacity>
 
          <itemTemplate>
             <container>
                <image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
                   <path>{system:logo}</path>
-                  <roundCorners>0.15</roundCorners>
+                  <roundCorners>0.06</roundCorners>
                   </image>
                <image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
                   <path ifSubset="colorset:blue">${themePath}/_theme_inc/images/caratulas/default.png</path>
                   <path ifSubset="colorset:black">${themePath}/_theme_inc/images/caratulas/default-b.png</path>
                   <visible>!exists({system:logo})</visible>
-                  <roundCorners>0.15</roundCorners>
+                  <roundCorners>0.06</roundCorners>
 
                </image>
                <text name="substitutionText" color="white" alignment="center" multiLine="true">
@@ -83,11 +83,12 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
          <alignment>left</alignment>
          <verticalAlignment>top</verticalAlignment>
          <zIndex>90</zIndex>
-         <roundCorners>0.15</roundCorners>
+         <roundCorners>0.06</roundCorners>
          <origin>0 0</origin>
-         <opacity>0</opacity>
+         <color>2cd9ffff</color>
+         <opacity>0.55</opacity>
          <storyboard>
-            <animation property="opacity" to="1" begin="200" duration="500" mode="easeInOut" autoreverse="true" repeat="forever" />
+            <animation property="opacity" from="0.3" to="0.8" begin="200" duration="650" mode="easeInOut" autoreverse="true" repeat="forever" />
           </storyboard>
 
       </image>
@@ -101,7 +102,7 @@ https://github.com/pajarorrojo/es-theme-PlayStation-X
          <size>0.6 0.001</size>
          <size ifSubset="aspect-ratio:3-2">0.57 0.001</size>
          <alignment>left</alignment>
-         <color>FFFFFF</color>
+         <color>5edaff</color>
          <fontPath>${themePath}/_theme_inc/fonts/SST Light.ttf</fontPath>
          <fontPath ifSubset="aspect-ratio:4-3|9-16|5-4" tinyScreen="true">${themePath}/_theme_inc/fonts/SST Roman.ttf</fontPath>
          <zIndex>99</zIndex>
